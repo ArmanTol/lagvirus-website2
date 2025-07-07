@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lag Virus ($LAG)</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
   <style>
     * {
-      scroll-behavior: smooth;
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
     }
     body {
       font-family: 'Orbitron', sans-serif;
-      background: #0f0f0f;
+      background-color: #0f0f0f;
       color: #f5f5f5;
     }
     nav {
@@ -22,17 +22,22 @@
       top: 0;
       left: 0;
       right: 0;
-      background: #000;
-      padding: 1rem;
+      background-color: #000;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      align-items: center;
+      padding: 1rem;
       z-index: 1000;
+      overflow-x: auto;
     }
     nav a {
       color: #00ff99;
       text-decoration: none;
-      margin: 0 1rem;
+      margin: 0.5rem 1rem;
       font-weight: bold;
+      font-size: 1rem;
+      white-space: nowrap;
     }
     nav a:hover {
       color: #fff;
@@ -44,42 +49,49 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding-top: 4rem;
+      padding: 6rem 1rem 2rem;
       text-align: center;
     }
     header img {
-      width: 180px;
-      height: 180px;
+      width: 150px;
+      height: 150px;
       margin-bottom: 1.5rem;
       border-radius: 10px;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #00ff99;
     }
-    .buy-section, section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
+    .buy-section,
+    section {
+      padding: 2.5rem 1.5rem;
+      max-width: 900px;
       margin: 0 auto;
     }
     h2 {
       color: #00ff99;
       margin-bottom: 1rem;
       text-align: center;
+      font-size: 1.5rem;
     }
-    p, ul {
+    p,
+    ul {
       font-size: 1rem;
-      line-height: 1.6;
+      line-height: 1.5;
       text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
     }
     .buy-section a {
       background: #00ff99;
       color: #000;
-      padding: 1rem 2.5rem;
+      padding: 0.8rem 2rem;
       text-decoration: none;
       font-weight: bold;
       border-radius: 8px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       display: inline-block;
       transition: background 0.3s;
       margin-top: 1rem;
@@ -89,20 +101,38 @@
     }
     .socials a {
       color: #00ff99;
-      margin: 0 15px;
-      font-size: 1.3rem;
+      margin: 0 10px;
+      font-size: 1.1rem;
       text-decoration: none;
     }
     .socials {
       text-align: center;
       margin-top: 2rem;
+      flex-wrap: wrap;
     }
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 1.5rem;
       background: #0d0d0d;
       color: #999;
       font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        font-size: 0.85rem;
+        margin: 0.3rem 0.5rem;
+      }
+      .buy-section a {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -123,12 +153,12 @@
 
   <div class="buy-section">
     <h2>Buy $LAG Now</h2>
-    <a href="https://pancakeswap.finance/swap?outputCurrency=YOUR_TOKEN_ADDRESS" target="_blank">Buy on PancakeSwap</a>
+    <a href="https://pancakeswap.finance/swap?outputCurrency=0xb0432b30eE4B670D97fD034D4fD30a383ac8a486" target="_blank">Buy on PancakeSwap</a>
   </div>
 
   <section id="about">
     <h2>About Lag Virus ($LAG)</h2>
-    <p>Lag Virus is not just a token — it's a movement. Built for the craziest meme lovers, the wildest degens, and the most loyal viral army. Verified, burned, and ready to infect the internet.</p>
+    <p>Lag Virus is not just a token — it's a movement. Built for the craziest meme lovers, the wildest degens, and the most loyal viral army. Verified, burned, and ready to infect the internet. Now trending, and already live — CoinMarketCap listing is coming soon. Buy now before it gets verified!</p>
   </section>
 
   <section id="features">
